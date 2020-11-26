@@ -1,0 +1,343 @@
+/* ================================================================================ */
+/* =================== This section is for ALL pages (global) ===================== */
+/* ================================================================================ */
+
+@font-face {
+    font-family: "Baloo";
+    src: url(/assets/fonts/BalooTammudu2-Regular.ttf);
+    font-style: normal;
+    font-weight: 100%;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(/assets/fonts/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "left       header          right"
+            "left       content         right"
+            "left       content2        right"
+            "footer     footer         footer";
+    }
+}
+
+.navbar {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbarlist {
+    float: right;
+}
+
+.navbarlist .navbarlink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Quicksand;
+
+}
+
+/* Mouseover colour */
+.navbarlist .navbarlink:hover {
+    background-color: #222;
+}
+
+.top-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: Baloo;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 30px 0px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-image: url("/assets/images/background.jpg");
+    background-attachment: fixed;
+}
+
+/* ================================================================================ */
+/* ====================== This section is for the HOME page ======================= */
+/* ================================================================================ */
+
+#homeheader {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 50px;
+    color: white;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px 10px 30px 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#home-footer {
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: Quicksand;
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.steamlink:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.steamlink:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.steamlink:hover {
+    color: aqua;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* ================================================================================ */
+/* ====================== This section is for the TO-DO page ====================== */
+/* ================================================================================ */
+
+#to-do-header {
+    background-position: center;
+    font-family: Quicksand;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+    grid-area: header;
+    padding: 20px;
+}
+
+#to-do {
+    background-position: center;
+    font-family: Baloo;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    color: whitesmoke;
+    grid-area: content;
+}
+
+#suggestions {
+    background-position: center;
+    font-family: Quicksand;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: left;
+    color: whitesmoke;
+    grid-area: content2;
+    text-align: center;
+}
+
+#to-do-list {
+    list-style-type: none;
+    line-height: 2;
+}
+
+#to-do-left {
+    grid-area: left;
+}
+
+/* ================================================================================ */
+/* ====================== This section is for the ABOUT page ====================== */
+/* ================================================================================ */
+
+.gridheader {
+    background-position: center;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Quicksand;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 50px 50px 50px 50px;
+    grid-area: header;
+}
+
+.gridcontent {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    border-radius: 5px;
+    font-family: Baloo;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 50px 50px 50px;
+    grid-area: content;
+}
+
+.gridcontent2 {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-align: left;
+    font-family: Baloo;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 50px 50px 50px;
+    grid-area: content2;
+}
+
+.left-about {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-align: left;
+    font-family: Quicksand;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 10px 50px 50px 50px;
+    grid-area: left;
+}
+
+.right-about {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-align: left;
+    font-family: Quicksand;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 10px 50px 50px 50px;
+    grid-area: right;
+}
+
+#about-footer {
+    background-position: center;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Quicksand;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-area: footer;
+}
+
+#th-about {
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
+}
+
+#projects {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* ================================================================================ */
+/* ================== This section is for the LAUNCHPAD page ====================== */
+/* ================================================================================ */
+
+#launchpad-header {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Quicksand;
+    margin-top: 2%;
+    padding: 20px 0px 20px 0px;
+    grid-area: header;
+
+}
+
+#launchpad-click {
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Quicksand;
+    padding: 50px 0px 50px 0px;
+    font-size: 20px;
+    grid-area: content2;
+}
+
+#launchpad-note {
+    text-decoration: overline;
+}
+
+#th-launchpad {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 50px 0px 50px 0px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#launchpadlink {
+    color: white;
+    text-decoration: none;
+    font-family: Quicksand;
+}
+
+#launchpadinterface {
+    grid-area: content;
+    background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+}
