@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: "Baloo";
-    src: url(/assets/fonts/BalooTammudu2-Regular.ttf);
+    src: url(../assets/fonts/BalooTammudu2-Regular.ttf);
     font-style: normal;
     font-weight: 100%;
 }
 
 @font-face {
     font-family: "Quicksand";
-    src: url(/assets/fonts/Quicksand-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
     font-style: normal;
     font-weight: 100;
 }
@@ -75,8 +75,26 @@
 }
 
 body {
-    background-image: url("/assets/images/background.jpg");
+    background-image: url("../assets/images/background.jpg");
     background-attachment: fixed;
+}
+
+.whitelink:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.whitelink:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.whitelink:hover {
+    color: aqua;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 /* ================================================================================ */
@@ -115,25 +133,6 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-
-.steamlink:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.steamlink:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.steamlink:hover {
-    color: aqua;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 /* ================================================================================ */
 /* ====================== This section is for the TO-DO page ====================== */
 /* ================================================================================ */
